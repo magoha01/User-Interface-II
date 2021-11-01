@@ -52,9 +52,9 @@ body{
     color: #184E77;
 }
 
+
 header div{
-    display: inline-block;
-    margin: 2rem;
+    margin: 0%;
     display:flex;
     justify-content:space-between;
     width: 100%;
@@ -64,19 +64,18 @@ nav {
     width: 100%;
     display:flex;
     justify-content:flex-end;
-    padding:1rem;
+    padding:1%;
 }
 
 
 div p{
     font-size: 3rem;
     color:#184E77;
-    padding:2rem;
 }
 
 .top{
     display: flex;
-    margin: 1% 15% 1% 15%;
+    margin: 3% 15% 3% 15%;
     padding-top:3%;
     padding-bottom:3%;
     justify-content: center;
@@ -134,35 +133,28 @@ h1{
     border-radius: 8px;
 }
 
-.mid{
+.middle{
     display:flex;
-    max-width:100%;
-    justify-content: space-between;
-    
-}
-.left-block{
-    max-width:100%;
-  flex-direction: column;
-  padding-top:1%;
-}
-.mid-block{
-  flex-direction: column;
-  max-width:100%;
-  padding-top:1%;
-}
-.right-block{
-  flex-direction: column;
-  max-width:100%;
-  padding-top:1%;
+    max-width:100%; 
+    /* margin 5% 0; */
+    flex-direction: column;
 }
 
-.caption {
-    display: block;
-    padding:3%;
-    text-align:center;
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row no-wrap;
+}
+
+.item{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 100%;
+    text-align: center;
 }
 
 footer {
+    margin-top: 5%;
     display: flex;
     justify-content:center;
     padding: 3%;
@@ -171,14 +163,14 @@ footer {
 
 footer button{
     align-items:center;
-    background-color: #76C893; /* Green */
+    background-color: #76C893; 
     border: none;
     color: white;
     padding: 2rem 3rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     border-radius: 8px;   
 }
@@ -187,12 +179,37 @@ footer button{
 
 /* tablet media queries */
 @media(width: 800 px){
-    
-
+       
 } /* tablet end bracket */
 
 
 /* mobile media queries */
 @media(width: 500px){
 
-} 
+    header div{
+        margin:auto;
+       flex-direction: column;
+       align-items: center;
+       }
+
+   header nav{
+       flex-direction: column;
+       width:25%;
+   }
+   .middle{
+       flex-direction: row;
+       justify-content: space-around;
+   }
+.row{
+    flex-flow: column;
+    max-width: 50%;
+}
+
+.item{
+    margin: 5%;
+}
+
+.footer{
+    margin-top: 5%;
+}
+}/*  mobil end bracket */

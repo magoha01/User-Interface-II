@@ -49,7 +49,7 @@ html{
 body{
     font-size:1.6rem;
     font-family: 'Montserrat', sans-serif;
-    color: #184E77;
+    color: #012a4a;
 }
 
 
@@ -65,12 +65,13 @@ nav {
     display:flex;
     justify-content:flex-end;
     padding:1%;
+    text-decoration: none;
 }
 
 
-div p{
+div h2{
     font-size: 3rem;
-    color:#184E77;
+    color:#012a4a;
 }
 
 .top{
@@ -81,6 +82,7 @@ div p{
     justify-content: center;
     align-items: center;
     background-image: url('https://picsum.photos/id/1002/1000');
+    background-repeat: no-repeat;
 }
 
 .home{
@@ -104,7 +106,7 @@ div p{
     padding:2rem 3rem;
 }
 
-.mystuff{
+.title{
     display:flex;
     flex-flow: column;
     align-items: center;
@@ -117,11 +119,13 @@ h1{
     margin:10%;
     text-align: center;
     color:#FFFFFF;
+    text-shadow:2px 2px 10px black;
 }
 
-.mystuff button{
+
+.title button{
     align-items:center;
-    background-color: #76C893; /* Green */
+    background-color: #012a4a; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -158,12 +162,12 @@ footer {
     display: flex;
     justify-content:center;
     padding: 3%;
-    background-color:#168AAD;
+    background-color:#168aad;
 }
 
 footer button{
     align-items:center;
-    background-color: #76C893; 
+    background-color: #012a4a; 
     border: none;
     color: white;
     padding: 2rem 3rem;
@@ -179,7 +183,18 @@ footer button{
 
 /* tablet media queries */
 @media(width: 800 px){
+
+    header {
+        justify-content: space-between;
+    }
+
+    div h2{
+        align-content: center;
+    }
        
+    .item{
+        margin: 5%;
+    }
 } /* tablet end bracket */
 
 
@@ -187,19 +202,38 @@ footer button{
 @media(width: 500px){
 
     header div{
-        margin:auto;
        flex-direction: column;
        align-items: center;
-       }
+       text-align: center;
+    }
+
+    div h2{
+        font-size:5rem;
+    }
 
    header nav{
        flex-direction: column;
        width:25%;
+       margin: auto;
    }
+
+    nav{
+       text-align: center;
+   }
+
+   h1{
+       font-size: 5rem;
+   }
+   .top{
+       margin: 10% 2%;
+       width: max-width
+   }
+
    .middle{
        flex-direction: row;
        justify-content: space-around;
    }
+
 .row{
     flex-flow: column;
     max-width: 50%;
@@ -209,7 +243,13 @@ footer button{
     margin: 5%;
 }
 
-.footer{
-    margin-top: 5%;
+.item p{
+    margin: 5%;
+    font-size: 1.8rem;
 }
+
+footer{
+    padding: 10%;
+}
+
 }/*  mobil end bracket */

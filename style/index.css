@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    /* border:1px solid grey; */
+    border:1px solid grey;
 }
 
 html{
@@ -115,7 +115,7 @@ div p{
 }
 h1{
     font-size:8rem;
-    margin:2%;
+    margin:10%;
     text-align: center;
     color:#FFFFFF;
 }
@@ -129,7 +129,7 @@ h1{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     border-radius: 8px;
 }
@@ -143,17 +143,17 @@ h1{
 .left-block{
     max-width:100%;
   flex-direction: column;
-  padding-top:2rem;
+  padding-top:1%;
 }
 .mid-block{
   flex-direction: column;
   max-width:100%;
-  padding-top:2rem;
+  padding-top:1%;
 }
 .right-block{
   flex-direction: column;
   max-width:100%;
-  padding-top:2rem;
+  padding-top:1%;
 }
 
 .caption {
@@ -180,6 +180,19 @@ footer button{
     display: inline-block;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 8px;
-    
+    border-radius: 8px;   
 }
+
+/* media queries */
+
+/* tablet media queries */
+@media(width: 800 px){
+    
+
+} /* tablet end bracket */
+
+
+/* mobile media queries */
+@media(width: 500px){
+
+} 

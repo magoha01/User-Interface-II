@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 html{
@@ -140,14 +140,14 @@ h1{
 .middle{
     display:flex;
     max-width:100%; 
-    /* margin 5% 0; */
     flex-direction: column;
 }
 
 .row{
     display: flex;
     justify-content: space-between;
-    flex-flow: row no-wrap;
+    flex-direction: row;
+    max-width: 100%;
 }
 
 .item{
@@ -155,6 +155,12 @@ h1{
     flex-flow: column wrap;
     max-width: 100%;
     text-align: center;
+    max-width: 100%;
+}
+
+.item p{
+    margin: 5%;
+    font-size: 2rem;
 }
 
 footer {
@@ -188,13 +194,16 @@ footer button{
         justify-content: space-between;
     }
 
-    div h2{
-        align-content: center;
+    .middle{
+        flex-direction: row;
+        justify-content: space-around;
     }
-       
-    .item{
-        margin: 5%;
-    }
+ 
+ .row{
+     flex-flow: column;
+     max-width: 50%;
+ }
+    
 } /* tablet end bracket */
 
 
@@ -226,7 +235,7 @@ footer button{
    }
    .top{
        margin: 10% 2%;
-       width: max-width
+       max-width: 100%;
    }
 
    .middle{
@@ -239,9 +248,6 @@ footer button{
     max-width: 50%;
 }
 
-.item{
-    margin: 5%;
-}
 
 .item p{
     margin: 5%;
